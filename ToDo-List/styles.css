@@ -33,6 +33,7 @@ h3 {
   margin: 10px auto;
   background-color: rgb(55, 226, 213);
   width: 70%;
+  max-width: 800px;
   box-shadow: 5px 5px 5px rgb(0, 0, 0);
   border-radius: 5px;
 }
@@ -71,7 +72,7 @@ h3 {
 @media (max-width: 700px) {
 
   #inputContainer {
-    flex-wrap: wrap;
+    flex-flow: column;
   }
 
   #toDoInput {
@@ -80,6 +81,8 @@ h3 {
 
   #addButton {
     margin: 10px 0;
+    display: flex;
+    justify-content: center;
   }
 
 }
