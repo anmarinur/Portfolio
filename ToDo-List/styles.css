@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(89, 6, 150);
+  margin-top: 100px;
+  font-family: 'Krub', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(251, 203, 10);
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  background-color: rgb(55, 226, 213);
+  min-width: 700px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+#inputContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#toDoInput {
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0 10px 10px;
+}
+
+#addButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(251, 203, 10);
+  width: 100px;
+  margin: auto 0 auto 50px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 35px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+}
