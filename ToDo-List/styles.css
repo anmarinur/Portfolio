@@ -29,7 +29,8 @@ h3 {
 
 #container {
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;
   margin: 10px auto;
   background-color: rgb(55, 226, 213);
   width: 70%;
@@ -39,11 +40,11 @@ h3 {
 }
 
 #inputContainer {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  margin: 20px 0;
 }
 
 #toDoInput {
@@ -68,6 +69,26 @@ h3 {
   font-weight: bold;
   padding: 5px 10px 5px 10px;
 }
+
+#toDoContainer {
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.toDoShell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(89, 6, 150);
+  height: 35px;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  box-shadow: 5px 3px 3px rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
 
 @media (max-width: 700px) {
 

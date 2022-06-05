@@ -18,7 +18,7 @@ ToDo.prototype.realizada = function() {
 
 function buildToDo(toDo, index) {
   let toDoShell = document.createElement('div');
-  toDoShell.setAttribute('class', toDoShell);
+  toDoShell.setAttribute('class', 'toDoShell');
   let toDoText = document.createElement('span');
   toDoText.innerHTML = toDo.tarea;
   toDoText.setAttribute('id', index);
