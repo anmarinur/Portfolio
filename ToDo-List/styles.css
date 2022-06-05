@@ -80,15 +80,24 @@ h3 {
   align-items: center;
   justify-content: center;
   background-color: rgb(89, 6, 150);
-  height: 35px;
+  height: 40px;
   padding: 5px 10px 5px 10px;
   margin-bottom: 10px;
   font-size: 20px;
   color: rgb(255, 255, 255);
-  box-shadow: 5px 3px 3px rgb(0, 0, 0);
   border-radius: 4px;
 }
 
+.toDoShell span {
+  width: 90%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.completedTask {
+  color: lightgrey;
+  text-decoration: line-through;
+}
 
 @media (max-width: 700px) {
 

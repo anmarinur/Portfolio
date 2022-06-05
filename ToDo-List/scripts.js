@@ -16,13 +16,17 @@ ToDo.prototype.realizada = function() {
 
 // Función para transformar de objeto a etiquetas
 
-function buildToDo(toDo, index) {
+function buildToDo(todo, index) {
   let toDoShell = document.createElement('div');
   toDoShell.setAttribute('class', 'toDoShell');
   let toDoText = document.createElement('span');
-  toDoText.innerHTML = toDo.tarea;
+  toDoText.innerHTML = todo.tarea;
   toDoText.setAttribute('id', index);
+  if (todo.estado) {
+    toDoText.setAttribute('class', 'completedTask');
+  }
   toDoShell.appendChild(toDoText);
+  toDoText.addEventListener('click', completeToDo)
   return toDoShell;
 }
 
@@ -39,7 +43,7 @@ function displayToDo() {
   let toDoContainer = document.querySelector('#toDoContainer');
   toDoContainer.innerHTML = '';
   let newContainer = buildToDos(toDoItems);
-  newContainer.forEach(element => toDoContainer.appendChild(element));
+  newContainer.forEach(element => {toDoContainer.appendChild(element)});
 }
 
 // Función para crear nuevas tareas y agregarlas al arreglo
@@ -52,7 +56,20 @@ function newToDo() {
   displayToDo();
 }
 
+// Función para poner una tarea como completada
+
+function completeToDo(event) {
+  const index = event.target.id;
+  toDoItems[index].realizada();
+  displayToDo();
+}
+
 // Instrucción para crear la nueva tarea al dar click en el botón
 
 document.querySelector('#addButton').addEventListener('click', newToDo);
-
+document.querySelector('#toDoInput').addEventListener('keypress', e => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    newToDo();
+  }
+});
