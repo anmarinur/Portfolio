@@ -2,9 +2,6 @@ body {
   background-color: rgb(89, 6, 150);
   margin-top: 100px;
   font-family: 'Krub', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #header {
@@ -31,47 +28,15 @@ h3 {
 }
 
 #container {
+  margin: 10px auto;
   background-color: rgb(55, 226, 213);
   width: 70%;
   display: flex;
-  justify-content: center;
   box-shadow: 5px 5px 5px rgb(0, 0, 0);
   border-radius: 5px;
 }
 
-#inputContainer {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-#toDoInput {
-  width: 100%;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 0 10px 10px;
-}
-
-#addButton {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: rgb(251, 203, 10);
-  width: 100px;
-  margin: auto 0 auto 50px;
-  border-radius: 4px;
-  cursor: pointer;
-  height: 35px;
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  font-weight: bold;
-  padding: 5px 10px 5px 10px;
-}
-
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
 
   body {
     background-color: rgb(226, 55, 55);
