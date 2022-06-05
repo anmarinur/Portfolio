@@ -28,18 +28,31 @@ h3 {
 }
 
 #container {
+  display: flex;
+  justify-content: center;
   margin: 10px auto;
   background-color: rgb(55, 226, 213);
   width: 70%;
-  display: flex;
   box-shadow: 5px 5px 5px rgb(0, 0, 0);
   border-radius: 5px;
 }
+
+#inputContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
 
 @media (max-width: 700px) {
 
   body {
     background-color: rgb(226, 55, 55);
+  }
+
+  #inputContainer {
+    flex-wrap: wrap;
   }
 
 }
